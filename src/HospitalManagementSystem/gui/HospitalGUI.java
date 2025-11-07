@@ -11,6 +11,12 @@ import java.sql.ResultSet;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+// Import advanced feature windows
+import HospitalManagementSystem.gui.PrescriptionManagementWindow;
+import HospitalManagementSystem.gui.MedicalHistoryWindow;
+import HospitalManagementSystem.gui.LabTestManagementWindow;
+import HospitalManagementSystem.gui.BillingManagementWindow;
+
 public class HospitalGUI extends JFrame {
     private static final String url = "jdbc:mysql://localhost:3306/hospital";
     private static final String username = "root";
@@ -212,6 +218,10 @@ public class HospitalGUI extends JFrame {
         JButton patientsBtn = createSidebarButton("Patients", () -> openPatientManagement());
         JButton doctorsBtn = createSidebarButton("Doctors", () -> openDoctorManagement());
         JButton appointmentsBtn = createSidebarButton("Appointments", () -> openAppointmentManagement());
+        JButton prescriptionsBtn = createSidebarButton("Prescriptions", () -> openPrescriptionManagement());
+        JButton medicalHistoryBtn = createSidebarButton("Medical History", () -> openMedicalHistory());
+        JButton labTestsBtn = createSidebarButton("Lab Tests", () -> openLabTests());
+        JButton billingBtn = createSidebarButton("Billing", () -> openBilling());
         JButton reportsBtn = createSidebarButton("Reports", () -> openReports());
         JButton logoutBtn = createSidebarButton("Logout", () -> cardLayout.show(mainPanel, "LOGIN"));
 
@@ -220,6 +230,14 @@ public class HospitalGUI extends JFrame {
         sidebar.add(doctorsBtn);
         sidebar.add(Box.createVerticalStrut(10));
         sidebar.add(appointmentsBtn);
+        sidebar.add(Box.createVerticalStrut(10));
+        sidebar.add(prescriptionsBtn);
+        sidebar.add(Box.createVerticalStrut(10));
+        sidebar.add(medicalHistoryBtn);
+        sidebar.add(Box.createVerticalStrut(10));
+        sidebar.add(labTestsBtn);
+        sidebar.add(Box.createVerticalStrut(10));
+        sidebar.add(billingBtn);
         sidebar.add(Box.createVerticalStrut(10));
         sidebar.add(reportsBtn);
         sidebar.add(Box.createVerticalStrut(30));
@@ -385,6 +403,22 @@ public class HospitalGUI extends JFrame {
             default: // Cancel or close
                 break;
         }
+    }
+
+    private void openPrescriptionManagement() {
+        new PrescriptionManagementWindow(connection).setVisible(true);
+    }
+
+    private void openMedicalHistory() {
+        new MedicalHistoryWindow(connection).setVisible(true);
+    }
+
+    private void openLabTests() {
+        new LabTestManagementWindow(connection).setVisible(true);
+    }
+
+    private void openBilling() {
+        new BillingManagementWindow(connection).setVisible(true);
     }
 
     private String getDatabaseCount(String query) {

@@ -192,6 +192,10 @@ public class AppointmentManagementWindow extends JFrame {
         deleteButton = createStyledButton("Cancel Appointment", new Color(244, 67, 54));
         clearButton = createStyledButton("Clear Form", new Color(158, 158, 158));
 
+        // Add prescription button
+        JButton prescriptionButton = createStyledButton("Create Prescription", new Color(156, 39, 176));
+        prescriptionButton.addActionListener(e -> openPrescriptionForAppointment());
+
         addButton.addActionListener(e -> addAppointment());
         updateButton.addActionListener(e -> updateAppointment());
         deleteButton.addActionListener(e -> deleteAppointment());
@@ -200,6 +204,7 @@ public class AppointmentManagementWindow extends JFrame {
         panel.add(addButton);
         panel.add(updateButton);
         panel.add(deleteButton);
+        panel.add(prescriptionButton);
         panel.add(clearButton);
 
         return panel;
@@ -526,5 +531,37 @@ public class AppointmentManagementWindow extends JFrame {
         }
 
         return true;
+    }
+
+    private void openPrescriptionForAppointment() {
+        int selectedRow = appointmentTable.getSelectedRow();
+        if (selectedRow < 0) {
+            JOptionPane.showMessageDialog(this, "Please select an appointment to create prescription!");
+            return;
+        }
+
+        try {
+            // Get appointment details
+            int appointmentId = (Integer) tableModel.getValueAt(selectedRow, 0);
+            String patientInfo = tableModel.getValueAt(selectedRow, 1).toString();
+            String doctorInfo = tableModel.getValueAt(selectedRow, 2).toString();
+
+            // Extract patient and doctor IDs
+            String patientQuery = "SELECT patient_id, doctor_id FROM appointments WHERE id = ?";
+            PreparedStatement stmt = connection.prepareStatement(patientQuery);
+            stmt.setInt(1, appointmentId);
+            ResultSet rs = stmt.executeQuery();
+
+            if (rs.next()) {
+                int patientId = rs.getInt("patient_id");
+                int doctorId = rs.getInt("doctor_id");
+
+                // Open prescription window with pre-selected patient and doctor
+                new PrescriptionManagementWindow(connection, appointmentId, patientId, doctorId).setVisible(true);
+            }
+
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(this, "Error opening prescription: " + e.getMessage());
+        }
     }
 }
