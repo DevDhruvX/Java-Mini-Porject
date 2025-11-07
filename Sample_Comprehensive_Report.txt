@@ -1,0 +1,180 @@
+================================================================================
+                    HOSPITAL MANAGEMENT SYSTEM
+                   COMPREHENSIVE PERFORMANCE REPORT
+================================================================================
+
+Report Period: Last 30 Days
+Generated on: November 07, 2024 at 14:30:15
+System Version: HMS v2.0.1
+Report Type: Comprehensive Analytics & Performance Report
+
+================================================================================
+
+EXECUTIVE SUMMARY
+================================================================================
+
+• Total Registered Patients: 156
+• Active Medical Staff: 12
+• Total Appointments: 423
+• Appointment Completion Rate: 87.2%
+
+PERFORMANCE HIGHLIGHTS:
+• System Operational Status: ACTIVE
+• Patient Satisfaction Score: 4.6/5.0 (Estimated)
+• Average Daily Appointments: 14
+• Database Health: EXCELLENT
+
+================================================================================
+
+KEY PERFORMANCE INDICATORS (KPIs)
+================================================================================
+
+PATIENT METRICS:
+├─ Total Patients: 156
+├─ Male Patients: 78
+├─ Female Patients: 78
+└─ Average Age: 42.3 years
+
+MEDICAL STAFF METRICS:
+├─ Total Doctors: 12
+├─ Specializations: 8
+└─ Average Patients per Doctor: 13.0
+
+APPOINTMENT METRICS:
+├─ Scheduled: 145
+├─ Completed: 369
+├─ Cancelled: 54
+└─ Success Rate: 87.2%
+
+================================================================================
+
+DETAILED STATISTICAL ANALYSIS
+================================================================================
+
+PATIENT AGE DISTRIBUTION:
+├─ 0-18 years: 23 patients
+├─ 19-35 years: 45 patients
+├─ 36-55 years: 52 patients
+├─ 56-70 years: 28 patients
+└─ 70+ years: 8 patients
+
+MONTHLY APPOINTMENT TRENDS:
+├─ Jan: 38 appointments
+├─ Feb: 42 appointments
+├─ Mar: 51 appointments
+├─ Apr: 47 appointments
+├─ May: 55 appointments
+├─ Jun: 48 appointments
+├─ Jul: 52 appointments
+├─ Aug: 49 appointments
+├─ Sep: 41 appointments
+
+================================================================================
+
+PATIENT DEMOGRAPHICS ANALYSIS
+================================================================================
+
+GENDER DISTRIBUTION:
+├─ Male: 78 (50.0%)
+└─ Female: 78 (50.0%)
+
+TOP PATIENT LOCATIONS:
+├─ Downtown: 32 patients
+├─ North End: 28 patients
+├─ Riverside: 24 patients
+├─ West Hills: 21 patients
+├─ East Side: 19 patients
+
+================================================================================
+
+DOCTOR PERFORMANCE ANALYSIS
+================================================================================
+
+SPECIALIZATION BREAKDOWN:
+├─ Cardiology: 3 doctors
+├─ Orthopedics: 2 doctors
+├─ Pediatrics: 2 doctors
+├─ Neurology: 1 doctors
+├─ Dermatology: 1 doctors
+├─ General Medicine: 2 doctors
+├─ Emergency Medicine: 1 doctors
+
+TOP PERFORMING DOCTORS (by appointment count):
+├─ Dr. Sarah Johnson (Cardiology): 89 appointments
+├─ Dr. Michael Chen (Orthopedics): 76 appointments
+├─ Dr. Emily Rodriguez (Pediatrics): 68 appointments
+├─ Dr. David Kim (General Medicine): 59 appointments
+├─ Dr. Lisa Thompson (Dermatology): 45 appointments
+
+================================================================================
+
+APPOINTMENT ANALYTICS
+================================================================================
+
+APPOINTMENT STATUS DISTRIBUTION:
+├─ Scheduled: 145
+├─ Completed: 369
+├─ Cancelled: 54
+└─ Pending: 23
+
+PEAK APPOINTMENT HOURS:
+├─ 10:00 - 11:00: 87 appointments
+├─ 14:00 - 15:00: 78 appointments
+├─ 09:00 - 10:00: 71 appointments
+├─ 15:00 - 16:00: 65 appointments
+├─ 11:00 - 12:00: 58 appointments
+
+================================================================================
+
+FINANCIAL OVERVIEW (ESTIMATED)
+================================================================================
+
+REVENUE ANALYSIS:
+├─ Completed Consultations: 369
+├─ Average Consultation Fee: $50.00
+├─ Estimated Total Revenue: $18,450.00
+└─ Monthly Average: $1,537.50
+
+COST EFFICIENCY:
+├─ Patient Acquisition Cost: $25.00 (Estimated)
+├─ Average Treatment Value: $50.00
+└─ Return on Investment: 200% (Estimated)
+
+================================================================================
+
+SYSTEM HEALTH & PERFORMANCE
+================================================================================
+
+DATABASE PERFORMANCE:
+├─ Connection Status: ACTIVE
+├─ Query Response Time: 12ms
+├─ Database Health: EXCELLENT
+└─ Last Backup: N/A (Configure automatic backups)
+
+SYSTEM METRICS:
+├─ Application Uptime: 99.9%
+├─ User Sessions: Active
+├─ Memory Usage: Optimal
+└─ Security Status: SECURE
+
+================================================================================
+
+REPORT SUMMARY
+================================================================================
+
+This comprehensive report provides a complete overview of the Hospital Management
+System's performance, patient demographics, doctor efficiency, and operational
+metrics. The data presented reflects the current state of the system and can
+be used for strategic planning and operational improvements.
+
+RECOMMENDATIONS:
+• Implement automated backup systems
+• Consider expanding popular specializations
+• Monitor appointment cancellation rates
+• Schedule system maintenance during off-peak hours
+
+================================================================================
+Report generated by Hospital Management System v2.0.1
+Generated on: 2024-11-07 14:30:15
+© 2024 Hospital Management System. All rights reserved.
+================================================================================
